@@ -11,8 +11,8 @@ import sys, PyQt6, requests
 # Part 1 - The Backend Stuff
 
 
-API_KEY = "6810bee78099c6d6343446aedebeb2e4"
-API_KEYWEATHER = "f8d46a436620838c8fe598d8d532714c"
+API_KEY = ""
+API_KEYWEATHER = ""
 
 chosenCity = "Choose your city"
 cityLatitude = 0
