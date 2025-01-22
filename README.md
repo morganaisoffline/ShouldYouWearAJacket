@@ -1,4 +1,4 @@
-# Should You Wear a Jacket?
+# Should You Wear a Jacket? 🧥
 
 This project is a simple weather application that helps you decide whether you should wear a jacket based on the current weather conditions in your chosen city. It is built using Python and PyQt6 for the GUI, and it fetches weather data from the OpenWeatherMap API.
 
