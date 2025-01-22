@@ -1,7 +1,8 @@
 import PyQt6.QtCore
 import PyQt6.QtGui
 import PyQt6.QtWidgets
-import sys, PyQt6, requests
+import sys, PyQt6, requests, os
+from dotenv import load_dotenv
 
 
 
@@ -10,9 +11,8 @@ import sys, PyQt6, requests
 ############################################################
 # Part 1 - The Backend Stuff
 
-
-API_KEY = "6810bee78099c6d6343446aedebeb2e4"
-API_KEYWEATHER = "f8d46a436620838c8fe598d8d532714c"
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 chosenCity = "Choose your city"
 cityLatitude = 0
@@ -60,7 +60,7 @@ def fetchTemp():
     currentWeatherParams = {
     "lat": cityLatitude,
     "lon": cityLongitude,
-    "appid": API_KEYWEATHER,
+    "appid": API_KEY,
     "units": "metric"
     }
     # Fetch current weather conditions and parse to JSON
