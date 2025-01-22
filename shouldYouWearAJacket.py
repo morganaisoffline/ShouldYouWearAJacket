@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 ############################################################
 # Part 1 - The Backend Stuff
 
+
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
